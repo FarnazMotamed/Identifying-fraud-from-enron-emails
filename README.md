@@ -90,8 +90,7 @@ I did select Logistic Regression as final algorithm after testing 4 different ma
 After evaluation their performances, it appears that logistic regression is behaving the best in this data set.
 For the evaluation, I evaluated the precision and recall for each algorithm and then compared them in order to pick the most accurate one. 
 For LogisticRegression: 
-precision: 0.26287
-recall:    0.38300
+Precision: 0.37919	Recall: 0.39000
 For KMeans:
 precision: 0.0582076153737
 recall:    0.0776678571429
