@@ -65,6 +65,8 @@ leaving 143 data points.
 
 
 2.	What features did you end up using in your POI identifier, and what selection process did you use to pick them? Did you have to do any scaling? Why or why not? As part of the assignment, you should attempt to engineer your own feature that does not come ready-made in the dataset -- explain what feature you tried to make, and the rationale behind it. (You do not necessarily have to use it in the final analysis, only engineer and test it.) In your feature selection step, if you used an algorithm like a decision tree, please also give the feature importances of the features that you use, and if you used an automated feature selection function like SelectKBest, please report the feature scores and reasons for your choice of parameter values.  [relevant rubric items: “create new features”, “properly scale features”, “intelligently select feature”]
+
+
 I selected the features that were used in the final POI identification algorithm using the feature importances from the DecisionTreeClassifier, shown below.
 ['bonus', 0.32605459057071978]
 ['expenses', 0.17127277342331099]
@@ -82,6 +84,7 @@ I tried to find out what is the ratio and frequency of messages send by or recei
 
 
 3.	What algorithm did you end up using? What other one(s) did you try? How did model performance differ between algorithms?  [relevant rubric item: “pick an algorithm”]
+
 I did select Logistic Regression as final algorithm after testing 4 different machine learning algorithms. I tested Naïve-bayes, linear regression, kmeans, svc (support vector machine) and random forest. 
 After evaluation their performances, it appears that logistic regression is behaving the best in this data set.
 For the evaluation, I evaluated the precision and recall for each algorithm and then compared them in order to pick the most accurate one. 
@@ -141,7 +144,4 @@ References:
 3) https://en.wikipedia.org/wiki/Precision_and_recall
 4) https://en.wikipedia.org/wiki/Enron_Corpus
 5) https://en.wikipedia.org/wiki/Enron_scandal
-
-
-
 
